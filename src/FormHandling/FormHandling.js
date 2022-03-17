@@ -26,7 +26,7 @@ function FormHandling() {
       name,
       password,
       batch,
-      class: stdclass,
+      stdclass,
       email,
     };
     console.log("Student is", student);
@@ -39,6 +39,7 @@ function FormHandling() {
         type="text"
         onChange={onChangeHandler}
         placeholder=" Please Enter Your Name"
+        required
       />
       <h3>Password is: {password}</h3>
       <input
